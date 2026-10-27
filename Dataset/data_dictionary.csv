@@ -1,0 +1,143 @@
+table,position,column,type,key,description
+fact_inventory_daily,1,record_id,int,PK,Unique row number
+fact_inventory_daily,2,date,text,FK -> dim_calendar.date,Snapshot date (YYYY-MM-DD)
+fact_inventory_daily,3,sku_wh_key,text,FK -> dim_sku_warehouse.sku_wh_key,Single-column key = warehouse_id + '-' + sku_id (e.g. WH-MUM-SKU0001)
+fact_inventory_daily,4,warehouse_id,text,FK -> dim_warehouse.warehouse_id,Warehouse code
+fact_inventory_daily,5,sku_id,text,FK -> dim_sku.sku_id,Product code
+fact_inventory_daily,6,supplier_id,text,FK -> dim_supplier.supplier_id,Supplier of the SKU (single-sourced)
+fact_inventory_daily,7,opening_stock,int,,Units at start of day (= previous day's closing_stock)
+fact_inventory_daily,8,receipts_qty,int,,Units received from suppliers that day (0 if none)
+fact_inventory_daily,9,received_po_number,text,FK -> fact_purchase_orders.po_number,PO(s) delivered that day; two POs are joined with ';' on the 2 days where they arrived together; blank if no delivery
+fact_inventory_daily,10,po_qty_ordered_on_receipt,int,,Total quantity originally ordered on the PO(s) delivered that day (compare with receipts_qty)
+fact_inventory_daily,11,receipt_lead_time_days,int (nullable),,Actual lead time of the PO delivered that day; blank on days without delivery (on the 2 double-arrival days it is the later PO's)
+fact_inventory_daily,12,demand_qty,int,,Customer demand for the day
+fact_inventory_daily,13,issued_qty,int,,Units actually shipped (limited by stock)
+fact_inventory_daily,14,unfulfilled_qty,int,,"Demand not served (lost sales, not back-ordered)"
+fact_inventory_daily,15,expired_writeoff_qty,int,,Units written off for expiry
+fact_inventory_daily,16,cold_chain_excursion_loss_qty,int,,Units lost to temperature excursions (cold-chain items)
+fact_inventory_daily,17,closing_stock,int,,Units at end of day
+fact_inventory_daily,18,on_order_qty,int,,Quantity on open POs at end of day (includes a PO raised that day)
+fact_inventory_daily,19,inventory_position,int,,closing_stock + on_order_qty
+fact_inventory_daily,20,inventory_position_at_review,int,,Position before that day's new order; the value compared with reorder_point by the reorder rule
+fact_inventory_daily,21,forecast_daily_demand_28d,float,,Trailing 28-day average daily demand
+fact_inventory_daily,22,demand_std_28d,float,,Trailing 28-day standard deviation of daily demand
+fact_inventory_daily,23,expected_lead_time_days,float,,Planning lead time that day (inflated during supplier disruption)
+fact_inventory_daily,24,safety_stock,int,,Buffer stock = z x sqrt(LT x sigma_d^2 + d^2 x sigma_LT^2)
+fact_inventory_daily,25,reorder_point,int,,Forecast demand over lead time + safety stock
+fact_inventory_daily,26,eoq_qty,int,,Economic order quantity (at least MOQ)
+fact_inventory_daily,27,max_stock_level,int,,Order-up-to level (reorder_point + eoq_qty)
+fact_inventory_daily,28,reorder_triggered,int,,1 if a PO was raised that day
+fact_inventory_daily,29,po_number,text,FK -> fact_purchase_orders.po_number,PO raised that day; blank if none
+fact_inventory_daily,30,order_qty,int,,Quantity ordered that day (0 if none)
+fact_inventory_daily,31,order_value_inr,float,,order_qty x unit cost
+fact_inventory_daily,32,ordering_cost_inr,float,,Fixed cost of raising the PO (only on order days)
+fact_inventory_daily,33,stockout_flag,int,,1 if any demand went unfulfilled
+fact_inventory_daily,34,days_of_cover,float,,closing_stock / forecast_daily_demand_28d
+fact_inventory_daily,35,fill_rate_daily,float,,issued_qty / demand_qty (1 if no demand)
+fact_inventory_daily,36,stock_status,text,,Stockout / Critical (below safety stock) / Below reorder point / Healthy / Overstock (>60 days cover)
+fact_inventory_daily,37,stock_value_inr,float,,closing_stock x unit cost
+fact_inventory_daily,38,sales_value_inr,float,,issued_qty x unit price
+fact_inventory_daily,39,cogs_inr,float,,issued_qty x unit cost
+fact_inventory_daily,40,lost_sales_value_inr,float,,unfulfilled_qty x unit price
+fact_inventory_daily,41,writeoff_value_inr,float,,(expired + cold-chain loss units) x unit cost
+fact_inventory_daily,42,holding_cost_inr,float,,Daily holding cost at 22% per year of stock value
+fact_inventory_daily,43,outbreak_flag,int,,1 on days covered by a Disease Outbreak row in fact_events for this warehouse and category
+fact_inventory_daily,44,tender_promo_flag,int,,1 on days covered by a Tender/Promo Burst row in fact_events for this warehouse and SKU
+fact_inventory_daily,45,supplier_disruption_flag,int,,1 on days covered by a Supplier Disruption row in fact_events for this SKU's supplier
+fact_inventory_daily,46,latest_batch_no,text,,Most recently received batch (OPENING-STOCK until the first receipt)
+fact_inventory_daily,47,latest_batch_expiry_date,text,,Expiry date of that batch
+fact_inventory_daily,48,days_to_expiry_latest_batch,int,,Days from date to that expiry
+fact_inventory_daily,49,recommended_action,text,,"Rule-based daily action: Expedite PO / transfer, Raise replenishment order, Pause ordering / transfer out / liquidate, Prioritise FEFO / near-expiry clearance, No action"
+fact_purchase_orders,1,po_number,text,PK,"PO identifier, format `PO-WH-yymmdd-SKU` (e.g. PO-BLR-240108-0039)"
+fact_purchase_orders,2,sku_wh_key,text,FK -> dim_sku_warehouse.sku_wh_key,warehouse_id + '-' + sku_id
+fact_purchase_orders,3,warehouse_id,text,FK -> dim_warehouse.warehouse_id,Receiving warehouse
+fact_purchase_orders,4,sku_id,text,FK -> dim_sku.sku_id,Product
+fact_purchase_orders,5,supplier_id,text,FK -> dim_supplier.supplier_id,Supplier
+fact_purchase_orders,6,order_date,text,FK -> dim_calendar.date,Date the PO was raised (matches fact_inventory_daily.date where po_number is set)
+fact_purchase_orders,7,ordered_qty,int (nullable),,Units ordered
+fact_purchase_orders,8,unit_cost_inr,float,,Unit cost used to value the order
+fact_purchase_orders,9,ordered_value_inr,float,,ordered_qty x unit_cost_inr
+fact_purchase_orders,10,expected_lead_time_days,float,,Planning lead time at order date
+fact_purchase_orders,11,expected_delivery_date,text,,order_date + expected lead time (rounded to whole days)
+fact_purchase_orders,12,actual_lead_time_days,int (nullable),,Actual days from order to delivery; blank for open POs
+fact_purchase_orders,13,actual_delivery_date,text,FK -> dim_calendar.date,Delivery date; blank for open POs
+fact_purchase_orders,14,delay_days,int (nullable),,actual lead time - expected lead time (days); positive = late
+fact_purchase_orders,15,is_late,int (nullable),,1 if delay_days > 0; blank for open POs
+fact_purchase_orders,16,received_qty,int (nullable),,Units delivered (can be less than ordered); blank for open POs
+fact_purchase_orders,17,received_value_inr,float,,received_qty x unit_cost_inr
+fact_purchase_orders,18,short_shipped_qty,int (nullable),,ordered_qty - received_qty
+fact_purchase_orders,19,fill_rate,float,,received_qty / ordered_qty
+fact_purchase_orders,20,is_short_shipped,int (nullable),,1 if received_qty < ordered_qty
+fact_purchase_orders,21,supplier_disruption_at_order,int,,1 if the supplier was in a disruption window when the PO was placed
+fact_purchase_orders,22,po_status,text,,"Received, or Open - in transit at period end (127 POs whose delivery falls after 2025-12-31)"
+fact_events,1,event_id,text,PK,Event identifier (EV001...)
+fact_events,2,event_type,text,,Disease Outbreak / Tender/Promo Burst / Supplier Disruption
+fact_events,3,start_date,text,FK -> dim_calendar.date,First day of the event
+fact_events,4,end_date,text,FK -> dim_calendar.date,Last day of the event
+fact_events,5,duration_days,int,,Length in days
+fact_events,6,warehouse_id,text,FK -> dim_warehouse.warehouse_id,Affected warehouse (outbreaks and tender bursts; blank for supplier disruptions)
+fact_events,7,category,text,,Affected therapeutic category (outbreaks: all SKUs of that category at that warehouse)
+fact_events,8,sku_id,text,FK -> dim_sku.sku_id,Affected SKU (tender/promo bursts only)
+fact_events,9,supplier_id,text,FK -> dim_supplier.supplier_id,Affected supplier (supplier disruptions only; applies to all that supplier's SKUs at every warehouse)
+fact_events,10,demand_multiplier,float,,"Demand uplift factor during the event (outbreaks, bursts)"
+fact_events,11,planning_lead_time_multiplier,float,,Factor by which planning lead time was inflated (supplier disruptions)
+fact_events,12,actual_lead_time_multiplier,float,,Factor applied to actual delivery lead time (supplier disruptions)
+dim_sku_warehouse,1,sku_wh_key,text,PK,warehouse_id + '-' + sku_id
+dim_sku_warehouse,2,warehouse_id,text,FK -> dim_warehouse.warehouse_id,Warehouse
+dim_sku_warehouse,3,sku_id,text,FK -> dim_sku.sku_id,Product
+dim_sku_warehouse,4,supplier_id,text,FK -> dim_supplier.supplier_id,Supplier
+dim_sku_warehouse,5,abc_class,text,,A/B/C by annual consumption value (same as dim_sku.abc_class)
+dim_sku_warehouse,6,xyz_class,text,,"X stable / Y moderate / Z erratic demand, from demand_cv_weekly (40/40/20 split)"
+dim_sku_warehouse,7,abc_xyz_segment,text,,"Combined segment, e.g. AX, BZ"
+dim_sku_warehouse,8,demand_cv_weekly,float,,Coefficient of variation of weekly demand over the full period
+dim_sku_warehouse,9,inventory_policy,text,,"Policy simulated: Continuous Review (s,Q) for A/B, Periodic Review (R,S) for C"
+dim_sku_warehouse,10,review_period_days,int,,"Review interval (0 = continuous, 14 = periodic)"
+dim_sku_warehouse,11,service_level_target,float,,"Target service level: A 98.5%, B 95%, C 90%"
+dim_sku_warehouse,12,recommended_strategy,text,,Suggested strategy for the ABC-XYZ segment
+dim_sku_warehouse,13,base_daily_demand_units,float,,"Baseline daily demand at this warehouse before seasonality, trend and events"
+dim_sku_warehouse,14,planned_lead_time_days,int,,Mean planned lead time = supplier mean + warehouse extra transit days
+dim_sku,1,sku_id,text,PK,Product code
+dim_sku,2,product_name,text,,Generic drug name with strength/pack
+dim_sku,3,category,text,,Therapeutic category
+dim_sku,4,dosage_form,text,,"Tablet, Capsule, Vial, Inhaler, Syrup, etc."
+dim_sku,5,storage_condition,text,,Ambient / Cold Chain 2-8C / Controlled
+dim_sku,6,shelf_life_months,int,,Labelled shelf life
+dim_sku,7,case_size,int,,Units per case; orders are multiples of this
+dim_sku,8,moq_cases,int,,Minimum order quantity in cases
+dim_sku,9,unit_cost_inr,float,,Landed cost per unit (INR)
+dim_sku,10,unit_price_inr,float,,Selling price per unit (INR)
+dim_sku,11,markup_pct,float,,"(price - cost) / cost, as a fraction"
+dim_sku,12,base_daily_demand_per_wh,float,,Average baseline daily demand per warehouse before warehouse size factor
+dim_sku,13,demand_volatility,float,,Noise level (CV) used for daily demand in the simulation
+dim_sku,14,order_cost_inr,int,,Fixed cost per PO (INR)
+dim_sku,15,supplier_id,text,FK -> dim_supplier.supplier_id,Single supplier of the SKU
+dim_sku,16,abc_class,text,,A/B/C by annual consumption value
+dim_warehouse,1,warehouse_id,text,PK,Warehouse code
+dim_warehouse,2,warehouse_name,text,,Warehouse name
+dim_warehouse,3,city,text,,City / location
+dim_warehouse,4,state,text,,State
+dim_warehouse,5,region,text,,West / North / South / East
+dim_warehouse,6,latitude,float,,Approximate latitude
+dim_warehouse,7,longitude,float,,Approximate longitude
+dim_warehouse,8,demand_size_factor,float,,Demand scale vs a reference warehouse (1.0)
+dim_warehouse,9,extra_transit_days,int,,Days added to supplier lead time for this warehouse
+dim_warehouse,10,cold_chain_enabled,bool,,True if the warehouse stocks 2-8C products
+dim_supplier,1,supplier_id,text,PK,Supplier code
+dim_supplier,2,supplier_name,text,,Supplier name
+dim_supplier,3,planned_lead_time_mean_days,int,,Mean quoted lead time (days)
+dim_supplier,4,lead_time_sd_days,float,,Standard deviation of lead time (days)
+dim_supplier,5,delivery_reliability,float,,Probability a delivery is complete; otherwise 55-95% of the order is shipped
+dim_supplier,6,cold_chain_capable,bool,,True if the supplier can ship 2-8C products
+dim_calendar,1,date,text,PK,Calendar date
+dim_calendar,2,year,int32,,Year
+dim_calendar,3,quarter,int32,,Quarter 1-4
+dim_calendar,4,month,int32,,Month 1-12
+dim_calendar,5,month_name,text,,Month name
+dim_calendar,6,week_of_year,int,,ISO week number
+dim_calendar,7,day_of_month,int32,,Day of month
+dim_calendar,8,day_of_week,text,,Day name
+dim_calendar,9,day_of_week_num,int32,,Monday = 1 ... Sunday = 7
+dim_calendar,10,is_weekend,int,,1 for Saturday/Sunday
+dim_calendar,11,is_month_end,int,,1 on the last day of a month
+dim_calendar,12,indian_season,text,,"Winter (Dec-Feb), Summer (Mar-May), Monsoon (Jun-Sep), Post-monsoon (Oct-Nov)"
+dim_calendar,13,festive_dip_flag,int,,"1 for 20-26 October each year, when the simulation applies a 10% demand dip"

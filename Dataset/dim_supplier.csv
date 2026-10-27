@@ -1,0 +1,9 @@
+supplier_id,supplier_name,planned_lead_time_mean_days,lead_time_sd_days,delivery_reliability,cold_chain_capable
+SUP01,Zenith Pharma Labs,7,1.2,0.96,False
+SUP02,Medora Biotech,14,2.5,0.92,True
+SUP03,Vitalis Generics,9,1.5,0.94,False
+SUP04,CuraChem Industries,12,3.0,0.85,False
+SUP05,Apex Lifesciences,18,4.0,0.8,False
+SUP06,NovaCure Pharma,10,2.0,0.9,False
+SUP07,BioSerum India,16,3.0,0.88,True
+SUP08,Sunrise Formulations,6,1.0,0.97,False

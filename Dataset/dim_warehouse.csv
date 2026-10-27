@@ -1,0 +1,6 @@
+warehouse_id,warehouse_name,city,state,region,latitude,longitude,demand_size_factor,extra_transit_days,cold_chain_enabled
+WH-MUM,Mumbai DC (Bhiwandi),Bhiwandi (Mumbai),Maharashtra,West,19.3,73.06,1.25,0,True
+WH-DEL,Delhi NCR DC (Gurugram),Gurugram (Delhi NCR),Haryana,North,28.46,77.03,1.2,1,True
+WH-BLR,Bengaluru DC,Bengaluru,Karnataka,South,12.97,77.59,1.0,1,True
+WH-HYD,Hyderabad DC,Hyderabad,Telangana,South,17.39,78.49,0.85,0,True
+WH-KOL,Kolkata DC,Kolkata,West Bengal,East,22.57,88.36,0.7,2,True

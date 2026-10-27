@@ -1,0 +1,301 @@
+sku_wh_key,warehouse_id,sku_id,supplier_id,abc_class,xyz_class,abc_xyz_segment,demand_cv_weekly,inventory_policy,review_period_days,service_level_target,recommended_strategy,base_daily_demand_units,planned_lead_time_days
+WH-BLR-SKU0001,WH-BLR,SKU0001,SUP03,B,Z,BZ,0.3579,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",396.17,10
+WH-BLR-SKU0002,WH-BLR,SKU0002,SUP06,A,Z,AZ,0.3421,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",324.71,11
+WH-BLR-SKU0003,WH-BLR,SKU0003,SUP03,B,Z,BZ,0.3825,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",249.58,10
+WH-BLR-SKU0004,WH-BLR,SKU0004,SUP06,A,Y,AY,0.2965,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",277.06,11
+WH-BLR-SKU0005,WH-BLR,SKU0005,SUP04,C,Z,CZ,0.368,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",200.29,13
+WH-BLR-SKU0006,WH-BLR,SKU0006,SUP03,C,Y,CY,0.3111,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",391.62,10
+WH-BLR-SKU0007,WH-BLR,SKU0007,SUP04,B,X,BX,0.1995,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,1425.39,13
+WH-BLR-SKU0008,WH-BLR,SKU0008,SUP05,C,X,CX,0.1417,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",815.41,19
+WH-BLR-SKU0009,WH-BLR,SKU0009,SUP06,C,Y,CY,0.2481,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",493.4,11
+WH-BLR-SKU0010,WH-BLR,SKU0010,SUP05,C,X,CX,0.1476,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",562.54,19
+WH-BLR-SKU0011,WH-BLR,SKU0011,SUP08,C,Z,CZ,0.3146,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",95.77,7
+WH-BLR-SKU0012,WH-BLR,SKU0012,SUP08,C,X,CX,0.1658,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",173.57,7
+WH-BLR-SKU0013,WH-BLR,SKU0013,SUP06,B,X,BX,0.1386,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,1028.23,11
+WH-BLR-SKU0014,WH-BLR,SKU0014,SUP05,B,Y,BY,0.2744,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,587.61,19
+WH-BLR-SKU0015,WH-BLR,SKU0015,SUP03,A,X,AX,0.1347,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,139.34,10
+WH-BLR-SKU0016,WH-BLR,SKU0016,SUP02,A,X,AX,0.1926,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,33.48,15
+WH-BLR-SKU0017,WH-BLR,SKU0017,SUP02,A,Y,AY,0.2688,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",25.44,15
+WH-BLR-SKU0018,WH-BLR,SKU0018,SUP04,B,Y,BY,0.2795,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,209.65,13
+WH-BLR-SKU0019,WH-BLR,SKU0019,SUP08,B,X,BX,0.1605,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,1128.55,7
+WH-BLR-SKU0020,WH-BLR,SKU0020,SUP04,A,X,AX,0.1755,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,764.83,13
+WH-BLR-SKU0021,WH-BLR,SKU0021,SUP01,B,Y,BY,0.2901,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,728.37,8
+WH-BLR-SKU0022,WH-BLR,SKU0022,SUP05,C,Y,CY,0.2967,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",527.95,19
+WH-BLR-SKU0023,WH-BLR,SKU0023,SUP08,B,X,BX,0.2044,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,463.18,7
+WH-BLR-SKU0024,WH-BLR,SKU0024,SUP08,B,X,BX,0.1406,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,652.51,7
+WH-BLR-SKU0025,WH-BLR,SKU0025,SUP03,A,X,AX,0.1678,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,50.85,10
+WH-BLR-SKU0026,WH-BLR,SKU0026,SUP04,B,X,BX,0.1998,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,373.1,13
+WH-BLR-SKU0027,WH-BLR,SKU0027,SUP05,A,X,AX,0.1985,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,29.92,19
+WH-BLR-SKU0028,WH-BLR,SKU0028,SUP03,C,Y,CY,0.2724,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",698.46,10
+WH-BLR-SKU0029,WH-BLR,SKU0029,SUP03,C,X,CX,0.199,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",500.0,10
+WH-BLR-SKU0030,WH-BLR,SKU0030,SUP03,A,Y,AY,0.2633,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",139.36,10
+WH-BLR-SKU0031,WH-BLR,SKU0031,SUP08,A,Z,AZ,0.3606,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",1230.94,7
+WH-BLR-SKU0032,WH-BLR,SKU0032,SUP06,B,Z,BZ,0.3531,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",834.77,11
+WH-BLR-SKU0033,WH-BLR,SKU0033,SUP08,C,Z,CZ,0.3573,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",323.69,7
+WH-BLR-SKU0034,WH-BLR,SKU0034,SUP06,B,Z,BZ,0.3557,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",286.65,11
+WH-BLR-SKU0035,WH-BLR,SKU0035,SUP08,C,Y,CY,0.3124,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",459.85,7
+WH-BLR-SKU0036,WH-BLR,SKU0036,SUP01,B,Z,BZ,0.3557,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",383.89,8
+WH-BLR-SKU0037,WH-BLR,SKU0037,SUP07,A,Y,AY,0.2684,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",12.04,17
+WH-BLR-SKU0038,WH-BLR,SKU0038,SUP02,A,Y,AY,0.2446,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",22.56,15
+WH-BLR-SKU0039,WH-BLR,SKU0039,SUP02,A,Z,AZ,0.364,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",17.79,15
+WH-BLR-SKU0040,WH-BLR,SKU0040,SUP07,B,Y,BY,0.2683,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,41.2,17
+WH-BLR-SKU0041,WH-BLR,SKU0041,SUP02,A,Y,AY,0.2653,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",14.58,15
+WH-BLR-SKU0042,WH-BLR,SKU0042,SUP02,A,Y,AY,0.2657,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",8.86,15
+WH-BLR-SKU0043,WH-BLR,SKU0043,SUP03,A,Z,AZ,0.3738,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",5.75,10
+WH-BLR-SKU0044,WH-BLR,SKU0044,SUP06,A,Z,AZ,0.3982,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",47.65,11
+WH-BLR-SKU0045,WH-BLR,SKU0045,SUP03,A,Y,AY,0.3116,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",26.58,10
+WH-BLR-SKU0046,WH-BLR,SKU0046,SUP02,A,Z,AZ,0.4909,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",1.61,15
+WH-BLR-SKU0047,WH-BLR,SKU0047,SUP08,C,X,CX,0.2341,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",54.36,7
+WH-BLR-SKU0048,WH-BLR,SKU0048,SUP01,C,Y,CY,0.3054,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",35.48,8
+WH-BLR-SKU0049,WH-BLR,SKU0049,SUP08,A,X,AX,0.2168,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,248.88,7
+WH-BLR-SKU0050,WH-BLR,SKU0050,SUP08,B,X,BX,0.1395,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,569.68,7
+WH-BLR-SKU0051,WH-BLR,SKU0051,SUP05,B,X,BX,0.1469,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,557.51,19
+WH-BLR-SKU0052,WH-BLR,SKU0052,SUP01,C,X,CX,0.1776,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",613.61,8
+WH-BLR-SKU0053,WH-BLR,SKU0053,SUP01,B,Y,BY,0.2719,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,622.97,8
+WH-BLR-SKU0054,WH-BLR,SKU0054,SUP03,C,Y,CY,0.2439,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",371.54,10
+WH-BLR-SKU0055,WH-BLR,SKU0055,SUP05,A,Y,AY,0.2779,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",77.63,19
+WH-BLR-SKU0056,WH-BLR,SKU0056,SUP01,B,Z,BZ,0.3392,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",136.75,8
+WH-BLR-SKU0057,WH-BLR,SKU0057,SUP04,A,Y,AY,0.2416,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",58.61,13
+WH-BLR-SKU0058,WH-BLR,SKU0058,SUP01,A,Z,AZ,0.3152,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",33.64,8
+WH-BLR-SKU0059,WH-BLR,SKU0059,SUP05,B,X,BX,0.1867,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,27.4,19
+WH-BLR-SKU0060,WH-BLR,SKU0060,SUP01,C,X,CX,0.2071,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",76.06,8
+WH-DEL-SKU0001,WH-DEL,SKU0001,SUP03,B,Y,BY,0.2721,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,470.54,10
+WH-DEL-SKU0002,WH-DEL,SKU0002,SUP06,A,Y,AY,0.2934,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",394.13,11
+WH-DEL-SKU0003,WH-DEL,SKU0003,SUP03,B,X,BX,0.1946,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,367.29,10
+WH-DEL-SKU0004,WH-DEL,SKU0004,SUP06,A,X,AX,0.1938,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,321.0,11
+WH-DEL-SKU0005,WH-DEL,SKU0005,SUP04,C,X,CX,0.2391,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",221.96,13
+WH-DEL-SKU0006,WH-DEL,SKU0006,SUP03,C,X,CX,0.2387,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",471.6,10
+WH-DEL-SKU0007,WH-DEL,SKU0007,SUP04,B,Y,BY,0.2604,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,2072.5,13
+WH-DEL-SKU0008,WH-DEL,SKU0008,SUP05,C,Y,CY,0.2499,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",900.75,19
+WH-DEL-SKU0009,WH-DEL,SKU0009,SUP06,C,Z,CZ,0.3543,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",752.04,11
+WH-DEL-SKU0010,WH-DEL,SKU0010,SUP05,C,Z,CZ,0.3286,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",639.87,19
+WH-DEL-SKU0011,WH-DEL,SKU0011,SUP08,C,Z,CZ,0.369,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",106.07,7
+WH-DEL-SKU0012,WH-DEL,SKU0012,SUP08,C,Y,CY,0.2973,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",193.52,7
+WH-DEL-SKU0013,WH-DEL,SKU0013,SUP06,B,X,BX,0.1395,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,1561.22,11
+WH-DEL-SKU0014,WH-DEL,SKU0014,SUP05,B,Y,BY,0.2564,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,643.63,19
+WH-DEL-SKU0015,WH-DEL,SKU0015,SUP03,A,X,AX,0.1569,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,193.16,10
+WH-DEL-SKU0016,WH-DEL,SKU0016,SUP02,A,X,AX,0.2164,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,44.38,15
+WH-DEL-SKU0017,WH-DEL,SKU0017,SUP02,A,Y,AY,0.2418,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",28.03,15
+WH-DEL-SKU0018,WH-DEL,SKU0018,SUP04,B,Y,BY,0.2837,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,247.97,13
+WH-DEL-SKU0019,WH-DEL,SKU0019,SUP08,B,X,BX,0.1415,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,1120.0,7
+WH-DEL-SKU0020,WH-DEL,SKU0020,SUP04,A,X,AX,0.1748,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,975.41,13
+WH-DEL-SKU0021,WH-DEL,SKU0021,SUP01,B,Y,BY,0.2416,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,803.64,8
+WH-DEL-SKU0022,WH-DEL,SKU0022,SUP05,C,Z,CZ,0.3148,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",592.14,19
+WH-DEL-SKU0023,WH-DEL,SKU0023,SUP08,B,X,BX,0.1904,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,509.47,7
+WH-DEL-SKU0024,WH-DEL,SKU0024,SUP08,B,X,BX,0.1295,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,668.79,7
+WH-DEL-SKU0025,WH-DEL,SKU0025,SUP03,A,X,AX,0.2199,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,66.75,10
+WH-DEL-SKU0026,WH-DEL,SKU0026,SUP04,B,Y,BY,0.2896,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,461.79,13
+WH-DEL-SKU0027,WH-DEL,SKU0027,SUP05,A,X,AX,0.2371,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,34.87,19
+WH-DEL-SKU0028,WH-DEL,SKU0028,SUP03,C,Z,CZ,0.353,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",963.23,10
+WH-DEL-SKU0029,WH-DEL,SKU0029,SUP03,C,Y,CY,0.2459,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",693.77,10
+WH-DEL-SKU0030,WH-DEL,SKU0030,SUP03,A,Y,AY,0.2949,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",147.89,10
+WH-DEL-SKU0031,WH-DEL,SKU0031,SUP08,A,Y,AY,0.2803,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",1252.87,7
+WH-DEL-SKU0032,WH-DEL,SKU0032,SUP06,B,Y,BY,0.2587,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,901.72,11
+WH-DEL-SKU0033,WH-DEL,SKU0033,SUP08,C,X,CX,0.1799,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",361.9,7
+WH-DEL-SKU0034,WH-DEL,SKU0034,SUP06,B,Y,BY,0.3002,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,283.42,11
+WH-DEL-SKU0035,WH-DEL,SKU0035,SUP08,C,Y,CY,0.2545,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",532.24,7
+WH-DEL-SKU0036,WH-DEL,SKU0036,SUP01,B,Y,BY,0.2562,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,456.48,8
+WH-DEL-SKU0037,WH-DEL,SKU0037,SUP07,A,X,AX,0.2334,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,14.82,17
+WH-DEL-SKU0038,WH-DEL,SKU0038,SUP02,A,X,AX,0.2224,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,28.42,15
+WH-DEL-SKU0039,WH-DEL,SKU0039,SUP02,A,Y,AY,0.3087,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",20.26,15
+WH-DEL-SKU0040,WH-DEL,SKU0040,SUP07,B,Y,BY,0.248,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,51.44,17
+WH-DEL-SKU0041,WH-DEL,SKU0041,SUP02,A,X,AX,0.2323,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,18.73,15
+WH-DEL-SKU0042,WH-DEL,SKU0042,SUP02,A,Y,AY,0.2857,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",12.41,15
+WH-DEL-SKU0043,WH-DEL,SKU0043,SUP03,A,Z,AZ,0.348,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",7.98,10
+WH-DEL-SKU0044,WH-DEL,SKU0044,SUP06,A,Z,AZ,0.3711,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",48.15,11
+WH-DEL-SKU0045,WH-DEL,SKU0045,SUP03,A,Y,AY,0.2506,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",40.14,10
+WH-DEL-SKU0046,WH-DEL,SKU0046,SUP02,A,Z,AZ,0.502,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",2.13,15
+WH-DEL-SKU0047,WH-DEL,SKU0047,SUP08,C,X,CX,0.2204,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",68.14,7
+WH-DEL-SKU0048,WH-DEL,SKU0048,SUP01,C,Y,CY,0.2877,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",44.32,8
+WH-DEL-SKU0049,WH-DEL,SKU0049,SUP08,A,Y,AY,0.2533,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",278.94,7
+WH-DEL-SKU0050,WH-DEL,SKU0050,SUP08,B,X,BX,0.1204,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,687.62,7
+WH-DEL-SKU0051,WH-DEL,SKU0051,SUP05,B,X,BX,0.1428,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,818.66,19
+WH-DEL-SKU0052,WH-DEL,SKU0052,SUP01,C,X,CX,0.1976,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",890.13,8
+WH-DEL-SKU0053,WH-DEL,SKU0053,SUP01,B,Y,BY,0.3003,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,763.32,8
+WH-DEL-SKU0054,WH-DEL,SKU0054,SUP03,C,X,CX,0.2228,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",428.64,10
+WH-DEL-SKU0055,WH-DEL,SKU0055,SUP05,A,Z,AZ,0.3478,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",89.71,19
+WH-DEL-SKU0056,WH-DEL,SKU0056,SUP01,B,Z,BZ,0.353,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",170.17,8
+WH-DEL-SKU0057,WH-DEL,SKU0057,SUP04,A,Z,AZ,0.4137,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",61.56,13
+WH-DEL-SKU0058,WH-DEL,SKU0058,SUP01,A,Z,AZ,0.3148,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",51.25,8
+WH-DEL-SKU0059,WH-DEL,SKU0059,SUP05,B,Y,BY,0.2901,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,34.19,19
+WH-DEL-SKU0060,WH-DEL,SKU0060,SUP01,C,Z,CZ,0.3334,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",79.81,8
+WH-HYD-SKU0001,WH-HYD,SKU0001,SUP03,B,Y,BY,0.3005,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,367.62,9
+WH-HYD-SKU0002,WH-HYD,SKU0002,SUP06,A,Y,AY,0.3087,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",276.19,10
+WH-HYD-SKU0003,WH-HYD,SKU0003,SUP03,B,Y,BY,0.2565,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,243.5,9
+WH-HYD-SKU0004,WH-HYD,SKU0004,SUP06,A,X,AX,0.1989,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,272.41,10
+WH-HYD-SKU0005,WH-HYD,SKU0005,SUP04,C,Y,CY,0.2952,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",198.08,12
+WH-HYD-SKU0006,WH-HYD,SKU0006,SUP03,C,Y,CY,0.2816,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",369.62,9
+WH-HYD-SKU0007,WH-HYD,SKU0007,SUP04,B,X,BX,0.2366,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,1440.89,12
+WH-HYD-SKU0008,WH-HYD,SKU0008,SUP05,C,X,CX,0.1796,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",662.95,18
+WH-HYD-SKU0009,WH-HYD,SKU0009,SUP06,C,Y,CY,0.257,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",542.44,10
+WH-HYD-SKU0010,WH-HYD,SKU0010,SUP05,C,X,CX,0.1774,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",414.6,18
+WH-HYD-SKU0011,WH-HYD,SKU0011,SUP08,C,Y,CY,0.2835,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",73.51,6
+WH-HYD-SKU0012,WH-HYD,SKU0012,SUP08,C,X,CX,0.2311,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",154.86,6
+WH-HYD-SKU0013,WH-HYD,SKU0013,SUP06,B,X,BX,0.1306,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,859.77,10
+WH-HYD-SKU0014,WH-HYD,SKU0014,SUP05,B,Y,BY,0.2975,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,470.04,18
+WH-HYD-SKU0015,WH-HYD,SKU0015,SUP03,A,X,AX,0.1449,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,150.43,9
+WH-HYD-SKU0016,WH-HYD,SKU0016,SUP02,A,X,AX,0.1945,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,30.82,14
+WH-HYD-SKU0017,WH-HYD,SKU0017,SUP02,A,Y,AY,0.293,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",17.17,14
+WH-HYD-SKU0018,WH-HYD,SKU0018,SUP04,B,Y,BY,0.252,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,147.64,12
+WH-HYD-SKU0019,WH-HYD,SKU0019,SUP08,B,X,BX,0.1446,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,804.82,6
+WH-HYD-SKU0020,WH-HYD,SKU0020,SUP04,A,X,AX,0.1825,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,590.94,12
+WH-HYD-SKU0021,WH-HYD,SKU0021,SUP01,B,Y,BY,0.2393,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,661.28,7
+WH-HYD-SKU0022,WH-HYD,SKU0022,SUP05,C,Y,CY,0.2747,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",416.14,18
+WH-HYD-SKU0023,WH-HYD,SKU0023,SUP08,B,X,BX,0.2082,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,383.89,6
+WH-HYD-SKU0024,WH-HYD,SKU0024,SUP08,B,X,BX,0.1419,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,547.86,6
+WH-HYD-SKU0025,WH-HYD,SKU0025,SUP03,A,Y,AY,0.2423,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",43.17,9
+WH-HYD-SKU0026,WH-HYD,SKU0026,SUP04,B,Y,BY,0.2679,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,324.32,12
+WH-HYD-SKU0027,WH-HYD,SKU0027,SUP05,A,Y,AY,0.2432,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",26.78,18
+WH-HYD-SKU0028,WH-HYD,SKU0028,SUP03,C,Z,CZ,0.3391,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",686.8,9
+WH-HYD-SKU0029,WH-HYD,SKU0029,SUP03,C,Y,CY,0.2743,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",540.62,9
+WH-HYD-SKU0030,WH-HYD,SKU0030,SUP03,A,Z,AZ,0.3282,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",111.49,9
+WH-HYD-SKU0031,WH-HYD,SKU0031,SUP08,A,Z,AZ,0.3721,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",906.26,6
+WH-HYD-SKU0032,WH-HYD,SKU0032,SUP06,B,Y,BY,0.2521,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,752.57,10
+WH-HYD-SKU0033,WH-HYD,SKU0033,SUP08,C,Y,CY,0.3031,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",279.95,6
+WH-HYD-SKU0034,WH-HYD,SKU0034,SUP06,B,Z,BZ,0.3677,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",226.47,10
+WH-HYD-SKU0035,WH-HYD,SKU0035,SUP08,C,Z,CZ,0.3482,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",498.82,6
+WH-HYD-SKU0036,WH-HYD,SKU0036,SUP01,B,Z,BZ,0.3829,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",359.49,7
+WH-HYD-SKU0037,WH-HYD,SKU0037,SUP07,A,X,AX,0.2063,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,11.74,16
+WH-HYD-SKU0038,WH-HYD,SKU0038,SUP02,A,X,AX,0.2038,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,19.4,14
+WH-HYD-SKU0039,WH-HYD,SKU0039,SUP02,A,Z,AZ,0.3391,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",15.03,14
+WH-HYD-SKU0040,WH-HYD,SKU0040,SUP07,B,Y,BY,0.2492,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,35.09,16
+WH-HYD-SKU0041,WH-HYD,SKU0041,SUP02,A,X,AX,0.2347,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,12.71,14
+WH-HYD-SKU0042,WH-HYD,SKU0042,SUP02,A,Y,AY,0.2994,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",8.8,14
+WH-HYD-SKU0043,WH-HYD,SKU0043,SUP03,A,Z,AZ,0.3727,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",6.17,9
+WH-HYD-SKU0044,WH-HYD,SKU0044,SUP06,A,Z,AZ,0.3834,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",41.34,10
+WH-HYD-SKU0045,WH-HYD,SKU0045,SUP03,A,Y,AY,0.2714,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",24.51,9
+WH-HYD-SKU0046,WH-HYD,SKU0046,SUP02,A,Z,AZ,0.5673,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",1.59,14
+WH-HYD-SKU0047,WH-HYD,SKU0047,SUP08,C,X,CX,0.2299,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",52.97,6
+WH-HYD-SKU0048,WH-HYD,SKU0048,SUP01,C,Z,CZ,0.3167,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",28.86,7
+WH-HYD-SKU0049,WH-HYD,SKU0049,SUP08,A,X,AX,0.2297,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,182.94,6
+WH-HYD-SKU0050,WH-HYD,SKU0050,SUP08,B,X,BX,0.1213,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,418.39,6
+WH-HYD-SKU0051,WH-HYD,SKU0051,SUP05,B,X,BX,0.1496,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,586.48,18
+WH-HYD-SKU0052,WH-HYD,SKU0052,SUP01,C,X,CX,0.1716,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",563.27,7
+WH-HYD-SKU0053,WH-HYD,SKU0053,SUP01,B,Y,BY,0.3026,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,549.97,7
+WH-HYD-SKU0054,WH-HYD,SKU0054,SUP03,C,X,CX,0.2134,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",300.11,9
+WH-HYD-SKU0055,WH-HYD,SKU0055,SUP05,A,Y,AY,0.2973,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",72.22,18
+WH-HYD-SKU0056,WH-HYD,SKU0056,SUP01,B,Y,BY,0.2598,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,107.66,7
+WH-HYD-SKU0057,WH-HYD,SKU0057,SUP04,A,X,AX,0.2304,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,50.24,12
+WH-HYD-SKU0058,WH-HYD,SKU0058,SUP01,A,Y,AY,0.2721,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",28.86,7
+WH-HYD-SKU0059,WH-HYD,SKU0059,SUP05,B,X,BX,0.1629,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,24.66,18
+WH-HYD-SKU0060,WH-HYD,SKU0060,SUP01,C,X,CX,0.1526,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",69.68,7
+WH-KOL-SKU0001,WH-KOL,SKU0001,SUP03,B,Y,BY,0.3036,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,358.7,11
+WH-KOL-SKU0002,WH-KOL,SKU0002,SUP06,A,Z,AZ,0.3182,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",226.1,12
+WH-KOL-SKU0003,WH-KOL,SKU0003,SUP03,B,Y,BY,0.3061,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,173.58,11
+WH-KOL-SKU0004,WH-KOL,SKU0004,SUP06,A,Y,AY,0.2508,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",199.68,12
+WH-KOL-SKU0005,WH-KOL,SKU0005,SUP04,C,Y,CY,0.3072,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",127.57,14
+WH-KOL-SKU0006,WH-KOL,SKU0006,SUP03,C,Y,CY,0.3089,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",268.33,11
+WH-KOL-SKU0007,WH-KOL,SKU0007,SUP04,B,X,BX,0.2237,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,1112.35,14
+WH-KOL-SKU0008,WH-KOL,SKU0008,SUP05,C,X,CX,0.2203,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",566.09,20
+WH-KOL-SKU0009,WH-KOL,SKU0009,SUP06,C,Y,CY,0.3087,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",437.43,12
+WH-KOL-SKU0010,WH-KOL,SKU0010,SUP05,C,X,CX,0.2163,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",397.9,20
+WH-KOL-SKU0011,WH-KOL,SKU0011,SUP08,C,Y,CY,0.298,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",64.91,8
+WH-KOL-SKU0012,WH-KOL,SKU0012,SUP08,C,X,CX,0.2254,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",137.74,8
+WH-KOL-SKU0013,WH-KOL,SKU0013,SUP06,B,X,BX,0.1447,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,694.55,12
+WH-KOL-SKU0014,WH-KOL,SKU0014,SUP05,B,Y,BY,0.3102,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,367.45,20
+WH-KOL-SKU0015,WH-KOL,SKU0015,SUP03,A,X,AX,0.1328,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,114.12,11
+WH-KOL-SKU0016,WH-KOL,SKU0016,SUP02,A,X,AX,0.2013,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,27.05,16
+WH-KOL-SKU0017,WH-KOL,SKU0017,SUP02,A,Y,AY,0.2847,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",13.33,16
+WH-KOL-SKU0018,WH-KOL,SKU0018,SUP04,B,Y,BY,0.2758,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,128.33,14
+WH-KOL-SKU0019,WH-KOL,SKU0019,SUP08,B,X,BX,0.1605,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,769.21,8
+WH-KOL-SKU0020,WH-KOL,SKU0020,SUP04,A,X,AX,0.1715,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,487.47,14
+WH-KOL-SKU0021,WH-KOL,SKU0021,SUP01,B,Y,BY,0.2596,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,468.4,9
+WH-KOL-SKU0022,WH-KOL,SKU0022,SUP05,C,Y,CY,0.2976,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",389.43,20
+WH-KOL-SKU0023,WH-KOL,SKU0023,SUP08,B,X,BX,0.1897,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,352.79,8
+WH-KOL-SKU0024,WH-KOL,SKU0024,SUP08,B,X,BX,0.1477,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,403.74,8
+WH-KOL-SKU0025,WH-KOL,SKU0025,SUP03,A,X,AX,0.1708,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,46.13,11
+WH-KOL-SKU0026,WH-KOL,SKU0026,SUP04,B,X,BX,0.1883,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,273.1,14
+WH-KOL-SKU0027,WH-KOL,SKU0027,SUP05,A,X,AX,0.1859,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,22.99,20
+WH-KOL-SKU0028,WH-KOL,SKU0028,SUP03,C,Y,CY,0.2748,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",510.98,11
+WH-KOL-SKU0029,WH-KOL,SKU0029,SUP03,C,X,CX,0.1649,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",399.53,11
+WH-KOL-SKU0030,WH-KOL,SKU0030,SUP03,A,X,AX,0.2212,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,85.87,11
+WH-KOL-SKU0031,WH-KOL,SKU0031,SUP08,A,Z,AZ,0.3277,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",700.64,8
+WH-KOL-SKU0032,WH-KOL,SKU0032,SUP06,B,Z,BZ,0.3205,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",641.33,12
+WH-KOL-SKU0033,WH-KOL,SKU0033,SUP08,C,Y,CY,0.2564,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",186.39,8
+WH-KOL-SKU0034,WH-KOL,SKU0034,SUP06,B,Z,BZ,0.3855,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",153.14,12
+WH-KOL-SKU0035,WH-KOL,SKU0035,SUP08,C,Y,CY,0.2963,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",343.57,8
+WH-KOL-SKU0036,WH-KOL,SKU0036,SUP01,B,Y,BY,0.2971,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,290.78,9
+WH-KOL-SKU0037,WH-KOL,SKU0037,SUP07,A,X,AX,0.2338,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,9.52,18
+WH-KOL-SKU0038,WH-KOL,SKU0038,SUP02,A,X,AX,0.2165,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,20.77,16
+WH-KOL-SKU0039,WH-KOL,SKU0039,SUP02,A,Z,AZ,0.3286,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",10.86,16
+WH-KOL-SKU0040,WH-KOL,SKU0040,SUP07,B,Y,BY,0.2542,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,28.61,18
+WH-KOL-SKU0041,WH-KOL,SKU0041,SUP02,A,Y,AY,0.2535,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",9.18,16
+WH-KOL-SKU0042,WH-KOL,SKU0042,SUP02,A,Y,AY,0.2814,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",7.08,16
+WH-KOL-SKU0043,WH-KOL,SKU0043,SUP03,A,Z,AZ,0.4341,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",5.12,11
+WH-KOL-SKU0044,WH-KOL,SKU0044,SUP06,A,Z,AZ,0.4331,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",31.52,12
+WH-KOL-SKU0045,WH-KOL,SKU0045,SUP03,A,Y,AY,0.2561,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",22.17,11
+WH-KOL-SKU0046,WH-KOL,SKU0046,SUP02,A,Z,AZ,0.5562,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",1.18,16
+WH-KOL-SKU0047,WH-KOL,SKU0047,SUP08,C,X,CX,0.2126,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",45.64,8
+WH-KOL-SKU0048,WH-KOL,SKU0048,SUP01,C,Z,CZ,0.3183,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",24.89,9
+WH-KOL-SKU0049,WH-KOL,SKU0049,SUP08,A,X,AX,0.2284,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,151.19,8
+WH-KOL-SKU0050,WH-KOL,SKU0050,SUP08,B,X,BX,0.1493,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,383.45,8
+WH-KOL-SKU0051,WH-KOL,SKU0051,SUP05,B,X,BX,0.1437,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,387.99,20
+WH-KOL-SKU0052,WH-KOL,SKU0052,SUP01,C,X,CX,0.1952,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",423.7,9
+WH-KOL-SKU0053,WH-KOL,SKU0053,SUP01,B,Y,BY,0.2899,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,338.13,9
+WH-KOL-SKU0054,WH-KOL,SKU0054,SUP03,C,X,CX,0.2012,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",246.27,11
+WH-KOL-SKU0055,WH-KOL,SKU0055,SUP05,A,Y,AY,0.3074,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",54.12,20
+WH-KOL-SKU0056,WH-KOL,SKU0056,SUP01,B,Y,BY,0.3032,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,86.79,9
+WH-KOL-SKU0057,WH-KOL,SKU0057,SUP04,A,X,AX,0.2173,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,37.12,14
+WH-KOL-SKU0058,WH-KOL,SKU0058,SUP01,A,Y,AY,0.2616,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",30.89,9
+WH-KOL-SKU0059,WH-KOL,SKU0059,SUP05,B,X,BX,0.155,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,21.49,20
+WH-KOL-SKU0060,WH-KOL,SKU0060,SUP01,C,X,CX,0.1623,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",53.26,9
+WH-MUM-SKU0001,WH-MUM,SKU0001,SUP03,B,Y,BY,0.3075,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,591.51,9
+WH-MUM-SKU0002,WH-MUM,SKU0002,SUP06,A,Z,AZ,0.3243,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",326.37,10
+WH-MUM-SKU0003,WH-MUM,SKU0003,SUP03,B,Y,BY,0.2823,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,369.49,9
+WH-MUM-SKU0004,WH-MUM,SKU0004,SUP06,A,Y,AY,0.3012,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",391.42,10
+WH-MUM-SKU0005,WH-MUM,SKU0005,SUP04,C,Z,CZ,0.3251,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",224.93,12
+WH-MUM-SKU0006,WH-MUM,SKU0006,SUP03,C,Y,CY,0.2642,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",535.34,9
+WH-MUM-SKU0007,WH-MUM,SKU0007,SUP04,B,Y,BY,0.2528,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,2071.32,12
+WH-MUM-SKU0008,WH-MUM,SKU0008,SUP05,C,Y,CY,0.2445,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",891.76,18
+WH-MUM-SKU0009,WH-MUM,SKU0009,SUP06,C,Z,CZ,0.3509,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",712.88,10
+WH-MUM-SKU0010,WH-MUM,SKU0010,SUP05,C,Y,CY,0.2688,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",629.24,18
+WH-MUM-SKU0011,WH-MUM,SKU0011,SUP08,C,Y,CY,0.2984,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",101.71,6
+WH-MUM-SKU0012,WH-MUM,SKU0012,SUP08,C,Y,CY,0.2432,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",253.93,6
+WH-MUM-SKU0013,WH-MUM,SKU0013,SUP06,B,X,BX,0.1414,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,1555.39,10
+WH-MUM-SKU0014,WH-MUM,SKU0014,SUP05,B,Y,BY,0.2713,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,629.65,18
+WH-MUM-SKU0015,WH-MUM,SKU0015,SUP03,A,X,AX,0.141,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,225.92,9
+WH-MUM-SKU0016,WH-MUM,SKU0016,SUP02,A,X,AX,0.1807,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,48.57,14
+WH-MUM-SKU0017,WH-MUM,SKU0017,SUP02,A,Y,AY,0.2529,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",26.14,14
+WH-MUM-SKU0018,WH-MUM,SKU0018,SUP04,B,Y,BY,0.299,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,251.21,12
+WH-MUM-SKU0019,WH-MUM,SKU0019,SUP08,B,X,BX,0.1241,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,1150.22,6
+WH-MUM-SKU0020,WH-MUM,SKU0020,SUP04,A,X,AX,0.17,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,1165.27,12
+WH-MUM-SKU0021,WH-MUM,SKU0021,SUP01,B,Y,BY,0.2444,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,904.78,7
+WH-MUM-SKU0022,WH-MUM,SKU0022,SUP05,C,Z,CZ,0.3455,"Periodic Review (R,S)",14,0.9,"Order-on-demand / make-to-order, minimise holding (review for delisting)",649.63,18
+WH-MUM-SKU0023,WH-MUM,SKU0023,SUP08,B,X,BX,0.2068,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,525.52,6
+WH-MUM-SKU0024,WH-MUM,SKU0024,SUP08,B,X,BX,0.1386,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,875.77,6
+WH-MUM-SKU0025,WH-MUM,SKU0025,SUP03,A,X,AX,0.1535,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,63.97,9
+WH-MUM-SKU0026,WH-MUM,SKU0026,SUP04,B,X,BX,0.1762,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,471.24,12
+WH-MUM-SKU0027,WH-MUM,SKU0027,SUP05,A,X,AX,0.1703,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,33.15,18
+WH-MUM-SKU0028,WH-MUM,SKU0028,SUP03,C,X,CX,0.2362,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",1051.66,9
+WH-MUM-SKU0029,WH-MUM,SKU0029,SUP03,C,X,CX,0.1622,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",631.73,9
+WH-MUM-SKU0030,WH-MUM,SKU0030,SUP03,A,X,AX,0.2087,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,177.73,9
+WH-MUM-SKU0031,WH-MUM,SKU0031,SUP08,A,Y,AY,0.2846,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",1404.69,6
+WH-MUM-SKU0032,WH-MUM,SKU0032,SUP06,B,X,BX,0.2296,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,883.43,10
+WH-MUM-SKU0033,WH-MUM,SKU0033,SUP08,C,X,CX,0.1775,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",312.76,6
+WH-MUM-SKU0034,WH-MUM,SKU0034,SUP06,B,Z,BZ,0.3161,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",270.36,10
+WH-MUM-SKU0035,WH-MUM,SKU0035,SUP08,C,Y,CY,0.2771,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",664.53,6
+WH-MUM-SKU0036,WH-MUM,SKU0036,SUP01,B,Y,BY,0.2707,"Continuous Review (s,Q)",0,0.95,Continuous review with seasonal forecast adjustment,531.51,7
+WH-MUM-SKU0037,WH-MUM,SKU0037,SUP07,A,Y,AY,0.2612,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",14.34,16
+WH-MUM-SKU0038,WH-MUM,SKU0038,SUP02,A,X,AX,0.1887,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,35.65,14
+WH-MUM-SKU0039,WH-MUM,SKU0039,SUP02,A,Z,AZ,0.3289,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",17.91,14
+WH-MUM-SKU0040,WH-MUM,SKU0040,SUP07,B,X,BX,0.2284,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,57.29,16
+WH-MUM-SKU0041,WH-MUM,SKU0041,SUP02,A,Y,AY,0.2466,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",20.76,14
+WH-MUM-SKU0042,WH-MUM,SKU0042,SUP02,A,Y,AY,0.2583,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",13.38,14
+WH-MUM-SKU0043,WH-MUM,SKU0043,SUP03,A,Z,AZ,0.3517,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",8.42,9
+WH-MUM-SKU0044,WH-MUM,SKU0044,SUP06,A,Z,AZ,0.3414,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",58.47,10
+WH-MUM-SKU0045,WH-MUM,SKU0045,SUP03,A,Y,AY,0.2734,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",33.18,9
+WH-MUM-SKU0046,WH-MUM,SKU0046,SUP02,A,Z,AZ,0.4059,"Continuous Review (s,Q)",0,0.985,"Higher safety stock, dual-sourcing, weekly demand-sensing review",1.99,14
+WH-MUM-SKU0047,WH-MUM,SKU0047,SUP08,C,X,CX,0.208,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",64.31,6
+WH-MUM-SKU0048,WH-MUM,SKU0048,SUP01,C,Y,CY,0.299,"Periodic Review (R,S)",14,0.9,"Periodic review (R,S), larger lot sizes",44.54,7
+WH-MUM-SKU0049,WH-MUM,SKU0049,SUP08,A,X,AX,0.2208,"Continuous Review (s,Q)",0,0.985,Continuous review + VMI/JIT with lean safety stock,325.55,6
+WH-MUM-SKU0050,WH-MUM,SKU0050,SUP08,B,X,BX,0.1091,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,741.37,6
+WH-MUM-SKU0051,WH-MUM,SKU0051,SUP05,B,X,BX,0.1366,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,880.1,18
+WH-MUM-SKU0052,WH-MUM,SKU0052,SUP01,C,X,CX,0.1894,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",744.96,7
+WH-MUM-SKU0053,WH-MUM,SKU0053,SUP01,B,Z,BZ,0.3178,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",755.64,7
+WH-MUM-SKU0054,WH-MUM,SKU0054,SUP03,C,X,CX,0.1998,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",404.95,9
+WH-MUM-SKU0055,WH-MUM,SKU0055,SUP05,A,Y,AY,0.3112,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",86.5,18
+WH-MUM-SKU0056,WH-MUM,SKU0056,SUP01,B,Z,BZ,0.3226,"Continuous Review (s,Q)",0,0.95,"Periodic review with buffer stock, order on trigger events",172.87,7
+WH-MUM-SKU0057,WH-MUM,SKU0057,SUP04,A,Y,AY,0.2671,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",77.68,12
+WH-MUM-SKU0058,WH-MUM,SKU0058,SUP01,A,Y,AY,0.2972,"Continuous Review (s,Q)",0,0.985,"Continuous review, dynamic safety stock, supplier collaboration",50.1,7
+WH-MUM-SKU0059,WH-MUM,SKU0059,SUP05,B,X,BX,0.1797,"Continuous Review (s,Q)",0,0.95,Min-Max auto-replenishment,30.91,18
+WH-MUM-SKU0060,WH-MUM,SKU0060,SUP01,C,X,CX,0.2038,"Periodic Review (R,S)",14,0.9,"Periodic review, bulk orders to cut ordering cost",97.24,7
